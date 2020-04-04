@@ -33,25 +33,25 @@ API reference:
 
 	pkg args =
 		// Must be called first ­ initializes the library
-		const init		: (args : byte[:][:] -> void)
+		const init     : (args : byte[:][:] → void)
 
 		// Sets the library usage string
-		const setusage	: (str : byte[:] -> void)
+		const setusage : (str : byte[:] → void)
 
 		// Emits and exits for usage
-		const usage		: (-> void)
+		const usage    : (→ void)
 
 		// Emits the next flag character in the flag chain
-		const opt		: (-> char)
+		const opt      : (→ char)
 
 		// Returns the current argument which must not be nil
-		const earg		: (-> byte[:])
+		const earg     : (→ byte[:])
 
 		// Returns the argv0 of the input, our program name
-		const progname	: (-> byte[:])
+		const progname : (→ byte[:])
 
 		// Print remaining arguments
-		const argv		: (-> byte[:][:])
+		const argv     : (→ byte[:][:])
 	;;
 
 
