@@ -2,6 +2,8 @@
 
 Commandline argument (flag) parsing library for the Myrddin programming language.
 
+Styled after the Inferno arg.m as per <http://man.cat-v.org/inferno/2/arg>.
+
 The Myrddin programming language: <https://myrlang.org>
 
 ## Build
@@ -55,7 +57,7 @@ API reference:
 
 ## Example
 
-A more complete example exists in `demo.myr`. 
+A more complete example exists in `demo.myr`.
 
 Generic usage of libargs:
 
