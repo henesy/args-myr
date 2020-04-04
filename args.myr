@@ -48,7 +48,7 @@ const init = {args : byte[:][:]
 	argen = args[1:]
 }
 
-// Sets the package usage state
+// Sets the library usage string
 const setusage = {str : byte[:]
 	initcheck()
 
@@ -106,16 +106,16 @@ const earg = {
 	-> argen[i++]
 }
 
-// Print remaining arguments
-const argv = {
-	-> argen[i:]
-}
-
 // Returns the argv0 of the input, our program name
 const progname = {
 	initcheck()
 
 	-> argv0
+}
+
+// Print remaining arguments
+const argv = {
+	-> argen[i:]
 }
 
 // Verifies if init() has been called
