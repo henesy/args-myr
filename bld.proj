@@ -1,0 +1,19 @@
+## An arguments library for great good
+## Styled after the Inferno arg.m
+
+# Library
+lib args =
+	args.myr
+;;
+
+# Demo usage
+bin demo =
+	demo.myr
+	lib args
+;;
+
+# Tests
+test tests =
+	test.myr
+	lib args
+;;
