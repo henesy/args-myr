@@ -1,19 +1,12 @@
-## An arguments library for great good
-## Styled after the Inferno arg.m
+## Misc maths functions implemented in Myrddin
 
 # Library
-lib args =
-	args.myr
-;;
-
-# Demo usage
-bin argsdemo =
-	demo.myr
-	lib args
+lib maths =
+	maths.myr
 ;;
 
 # Tests
 test tests =
 	test.myr
-	lib args
+	lib maths
 ;;
