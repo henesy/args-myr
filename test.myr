@@ -1,9 +1,28 @@
 use std
-use maths
+use args
 
-// Test maths functions
 const main = {
-	std.assert(maths.lerp(10.0, 5.0, 3.0) == -5.0, "lerp() failed\n")
-	
-	std.assert(maths.max(5, 3) == 5, "max() failed\n")
+	var argv = ["-h", "-n", "5", "--", "-F", "foo", "bar"][:]
+
+	args.init(argv)
+
+	args.setusage("test [-h] [-n N] name…")
+
+	var c
+	while((c = args.opt()) != (0 : char))
+		match c
+		| 'h':
+			;
+		| 'n':
+			args.earg()
+		| _:
+			args.usage()
+		;;
+	;;
+
+	if args.argv().len != 4
+		std.fatal("incorrect argument count\n")
+	;;
+
+	args.progname()
 }
